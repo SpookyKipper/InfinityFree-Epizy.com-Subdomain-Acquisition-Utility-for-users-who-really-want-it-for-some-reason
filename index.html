@@ -59,14 +59,15 @@
 <h1>InfinityFree Epizy.com Subdomain Acquisition Utility for users who really want it for some reason</h1>
 <form id="login_form" action="https://cpanel.epizy.com/login.php" target="iframe" method="post" >
 <label for="username">InfinityFree Hosting Account Username</label><br>
-<input type="text" style="width: 15%" id="username" name="username"><br><br>
+<input type="text" style="width: 15%" id="username" name="uname"><br><br>
 <label for="password">InfinityFree Hosting Account Password</label><br>
-<input type="password" style="width: 15%" id="password" name="password"><br><br>
+<input type="password" style="width: 15%" id="password" name="passwd"><br><br>
 </form>
 <form id="domain_form" action="https://cpanel.epizy.com/panel/indexpl.php?option=subdomains_add" target="iframe" method="post" >
 <label for="domain">InfinityFree EPIZY.COM SUBDOMAIN CHOICE</label><br>
-<input type="text" style="width: 15%" id="domain" name="domain">
-<label for="domain">.epizy.com</label><br><br><br><br>
+<input type="text" style="width: 15%" id="domain" name="DomainName">
+<input type="hidden" style="width: 15%" id="domain" name="DomainName" value="epizy.com">
+label for="domain">.epizy.com</label><br><br><br><br>
 </form>
 
 <button style="width: 100%; height: 50%;font-size: xxx-large;    line-break: anywhere;" onclick="getTheDamnDomain();">
