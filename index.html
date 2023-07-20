@@ -90,35 +90,26 @@ NOTE: THIS TOOL IS NOT PROVIDED BY InfinityFree OFFICIAL, I JUST MADE THE TOOL B
 	
 	
 	
+
+	
 	<script>
 	
 	function getTheDamnDomain() {
 	openPopup();
-	
 // Get the iframe element by its id
-const iframe = document.getElementById("iframe");
 
 function realGetDomain() {
-// Define the data to send
-var data = {
-  DomainName: document.getElementById('domain').value,
-  domain_selector: "epizy.com"
-};
+		document.getElementById('domain_form').submit();
 
-// Send the data to the iframe
-iframe.contentWindow.postMessage(data, "https://cpanel.spookhost.xyz/panel/indexpl.php?option=subdomains_add");
 }
 
+	document.getElementById('login_form').submit();
 
-var data = {
-  uname: document.getElementById('username').value,
-  passwd: document.getElementById('password').value
-};
-iframe.contentWindow.postMessage(data, "https://cpanel.spookhost.xyz/login.php");
 setTimeout(realGetDomain, 5000);
 
 }
 </script>
+
 
 
 
